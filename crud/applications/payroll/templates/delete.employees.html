@@ -13,9 +13,7 @@
 <body>
     <form style="text-align: center" class="container" method="post">
         {% csrf_token %}
-        <h1>
-            Are you sure you want to delete the register of the employee{{object.name}}?
-        </h1>
+        <h1>Are you sure you want to delete the employee{{object.name}}?</h1>
         <button class="btn btn-danger" type="submit">Delete</button>
     </form>
 </body>
